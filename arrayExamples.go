@@ -46,10 +46,23 @@ func sliceShortcuts() {
 
 }
 
+func appendElementsToASlice() {
+	a := []int{}
+	fmt.Printf("Length %v\n", len(a))
+	fmt.Printf("Capacity %v\n", cap(a))
+
+	a = append(a, 33) //appending a value to an already initialised slice
+	fmt.Println(a)
+	fmt.Printf("Length %v\n", len(a))
+	fmt.Printf("Capacity %v\n", cap(a))
+
+}
+
 func main() {
 
 	//	arrayCopyingGlitches()
 	//	sliceCopyingGlitches()
-	sliceShortcuts()
+	// sliceShortcuts()
+	appendElementsToASlice()
 
 }
